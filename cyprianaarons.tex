@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Cyprian T. Aarons
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://cyprianaarons.com/}{\Large Cyprian T. Aarons}} & Email : \href{mailto:hello@cyprianaarons.com}{hello@cyprianaarons.com}\\
+  \href{https://cyprianaarons.com/}{https://cyprianaarons.com} & Location : South Africa \\
+  \href{https://linkedin.com/in/cyprian-aarons-aa3365204}{linkedin.com/in/cyprian-aarons-aa3365204} & \href{https://github.com/CyprianTinasheAarons}{github.com/CyprianTinasheAarons} \\
+\end{tabular*}
+
+%-----------PROFESSIONAL PROFILE-----------------
+\section{Professional Profile}
+Seasoned Fullstack Software Engineer with over 5 years of experience in web and mobile applications development, specializing in AI and blockchain technologies. Proven ability to lead teams and projects to deliver innovative technology solutions that solve complex business challenges.
+
+%-----------TECHNICAL PROFICIENCY-----------------
+\section{Technical Proficiency}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages \& Frameworks}{JavaScript (React.js, Vue.js, Node.js), TypeScript, Python, Django, React Native, Solidity}
+  \resumeSubItem{Databases \& Cloud}{MongoDB, DigitalOcean}
+  \resumeSubItem{Tools \& Utilities}{Git, Docker, Figma, Jira, OpenAI APIs}
+  \resumeSubItem{Specializations}{MERN Stack, AI-Powered Solutions, Blockchain Development}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CST LTD Managed Services}{Remote, UK}
+      {Contractor Fullstack Mobile Developer}{2024 - present}
+      \resumeItemListStart
+        \resumeItem{Challenge}
+          {Inefficiencies in supply chain processes were causing delays and increased operational costs.}
+        \resumeItem{Solution}
+          {Developed and deployed robust mobile solutions that streamlined inventory management and supply chain processes, significantly reducing processing times and costs.}
+        \resumeItem{Outcome}
+          {Enhanced workflow efficiency for a team of 10, successfully integrated with existing IT management software using a custom Python FastAPI.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Coindraw.io}{Remote, UK}
+      {Contractor Fullstack Blockchain Developer}{2023 - present}
+      \resumeItemListStart
+        \resumeItem{Challenge}
+          {Needed a secure and efficient method to handle transactions and user interactions for a blockchain-based game draw platform.}
+        \resumeItem{Solution}
+          {Engineered smart contracts and integrated multiple blockchain wallets, creating a seamless user experience for ticket purchases and game participation.}
+        \resumeItem{Outcome}
+          {Developed a robust platform still in beta, serving over 300 users with integrated fiat and cryptocurrency transaction options.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AfricAI.app}{South Africa}
+      {CTO, Senior Full Stack Developer}{2023 – 2024}
+      \resumeItemListStart
+        \resumeItem{Challenge}
+          {Required advanced AI integration to enhance application functionalities for a competitive edge.}
+        \resumeItem{Solution}
+          {Led the integration of OpenAI APIs and developed serverless functions for scalable, AI-driven solutions.}
+        \resumeItem{Outcome}
+          {Successfully raised USD 30k through a funding page and managed a chat platform with 20,000 users.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freeflow.network}{Remote, Global}
+      {Senior Full Stack Developer (Freelance, Web3.0 \& Blockchain)}{2021 – 2023}
+      \resumeItemListStart
+        \resumeItem{Challenge}
+          {Clients needed custom blockchain solutions for user-friendly and highly functional NFTs.}
+        \resumeItem{Solution}
+          {Developed and deployed over 30 blockchain-based sites, emphasizing user interface design and secure transactions.}
+        \resumeItem{Outcome}
+          {Achieved a solid success rate with projects delivered on time and within budget, enhancing client satisfaction across diverse geographies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fresh Ideas}{Belvedere Trading Center, Zimbabwe}
+      {CTO, Senior Frontend Engineer and Lead Developer}{2019 – 2021}
+      \resumeItemListStart
+        \resumeItem{Challenge}
+          {Demand surged for online grocery and food delivery services due to COVID-19.}
+        \resumeItem{Solution}
+          {Developed online platforms that supported high-volume transactions and real-time order updates.}
+        \resumeItem{Outcome}
+          {Supported thousands of customers during the pandemic, facilitating essential services through innovative software solutions.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------NOTABLE PROJECTS-----------------
+\section{Notable Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Danai.chat}
+      {An AI-powered chat platform with a substantial user base.}
+    \resumeSubItem{Africanfolktales.app}
+      {Engaging storytelling platform with subscription services and interactive content for children.}
+    \resumeSubItem{Coindraw.io}
+      {Blockchain-based game draw and ticketing platform.}
+    \resumeSubItem{CSTLTD.com}
+      {IT Support Company UK.}
+  \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL INFORMATION-----------------
+\section{Additional Information}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}{Fluent in English.}
+  \resumeSubItem{Publications}{Authored articles on Web3.0, AI, and software development, demonstrating expertise and thought leadership.}
+\resumeSubHeadingListEnd
+
+%-----------REFERENCES-----------------
+\section{Recent References}
+\resumeSubHeadingListStart
+  \resumeSubItem{A.mitchell@cstltd.com}{}
+  \resumeSubItem{R.McManus@cstltd.com}{}
+\resumeSubHeadingListEnd
+
+\end{document}
